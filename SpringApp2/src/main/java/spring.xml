@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+  
+  <beans>
+  
+    <bean id="personn" class="org.javaBrian.programming.Personn">
+       <property name="name" value="amine"/>
+       <property name="age" value="29"/>
+       
+       <property name="adresse" ref="adresse1"></property>
+       <property name="adresse2" ref="adresse2"></property>
+       
+    </bean>
+    <bean id="adresse1" class="org.javaBrian.programming.Adresse">
+       <property name="steet" value="Wodanstraße"/>
+       <property name="nummer" value="7"/>
+    </bean>
+    <bean id="adresse2" class="org.javaBrian.programming.Adresse">
+         <property name="steet" value="DerbSouur"/>
+       <property name="nummer" value="180"/>
+    </bean>
+  
+  </beans>
